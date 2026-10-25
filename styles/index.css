@@ -1,0 +1,15 @@
+/*
+ * Opt in from a deck's headmatter:
+ *   defaults:
+ *     class: larger-body
+ * Cover, section, and the closing slide keep the theme sizes.
+ */
+.slidev-layout.larger-body:not(.cover):not(.section):not(.end) {
+  font-size: 1.6rem;
+  --slidev-code-font-size: 14px;
+  --slidev-code-line-height: 21px;
+}
+
+.slidev-layout.larger-body:not(.cover):not(.section):not(.end) p {
+  line-height: 1.55;
+}
